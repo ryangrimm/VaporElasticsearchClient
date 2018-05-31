@@ -38,6 +38,15 @@
         }
       },
       {
+        "package": "Elasticsearch",
+        "repositoryURL": "/Users/grimm/projects/vapor/Elasticsearch",
+        "state": {
+          "branch": null,
+          "revision": "393a3d0ebaa2c79a546e3f2aba06a5572d244d63",
+          "version": "0.0.1"
+        }
+      },
+      {
         "package": "Fluent",
         "repositoryURL": "https://github.com/vapor/fluent.git",
         "state": {

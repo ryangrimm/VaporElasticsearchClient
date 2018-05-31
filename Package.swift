@@ -4,6 +4,8 @@ import PackageDescription
 let package = Package(
     name: "ElasticsearchClient",
     dependencies: [
+        .package(url: "../Elasticsearch", from: "0.0.1"),
+
         // 💧 A server-side Swift web framework.
         .package(url: "https://github.com/vapor/vapor.git", from: "3.0.0"),
 
@@ -11,7 +13,7 @@ let package = Package(
         .package(url: "https://github.com/vapor/fluent-sqlite.git", from: "3.0.0-rc.2")
     ],
     targets: [
-        .target(name: "App", dependencies: ["FluentSQLite", "Vapor"]),
+        .target(name: "App", dependencies: ["FluentSQLite", "Vapor", "Elasticsearch"]),
         .target(name: "Run", dependencies: ["App"]),
         .testTarget(name: "AppTests", dependencies: ["App"])
     ]
